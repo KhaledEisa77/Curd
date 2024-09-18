@@ -1,0 +1,404 @@
+/* إضافة خطوط عامة للتصميم */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+    rgb(17, 15, 15),
+    rgb(15, 145, 69)
+  ); /* light gray background */
+}
+
+/* Header */
+
+header {
+  height: 120px;
+  background-color: rgba(15, 145, 69, 0.466);
+  color: #fff;
+  font-size: 70px;
+}
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  padding-top: 50px;
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+
+/* title */
+
+.word{
+  font-size: 60px;
+  color: white; 
+  font-family: sans-serif;
+  letter-spacing: 5px;
+}
+
+
+/* تصميم العنصر الرئيسي */
+.child {
+  background-image: linear-gradient(rgb(17, 15, 15), rgb(15, 145, 69));
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+/* تصميم العناوين */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* تصميم النماذج */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #666; /* dark gray text */
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* add transition effect */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #8bc34a; /* greenish border color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+  background-color: #2f9a44; /* darker bright green button color on hover */
+}
+
+/* تصميم جدول البيانات */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent; /* make table background transparent */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent; /* make table cells background transparent */
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/*تصميم حقل البحث */
+input[type="search"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* add transition effect */
+}
+*/ input[type="search"]:focus {
+  border-color: #8bc34a; /*greenish border color  */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* تصميم رسائل التحقق */
+.text-danger {
+  color: #dc3545; /* red text color */
+}
+
+.d-none {
+  display: none;
+}
+
+/* اضفافه الوان مميزه للخفلفيات */
+.btn-1 {
+  background-color: #ff69b4; /* bright pink button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* add transition effect */
+}
+
+.btn-1:hover {
+  background-color: #ff33cc; /* darker bright pink button color on hover */
+}
+
+.btn-2 {
+  background-color: #03a9f4; /* bright blue button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* add transition effect */
+}
+
+.btn-2:hover {
+  background-color: #0297d6; /* darker bright blue button color on hover */
+}
+
+.crud-system,
+.crud-table {
+  background-color: #fff;
+}
+
+.crud-system label {
+  color: #19524f;
+  font-size: 18px;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+/* From Uiverse.io by adamgiebl */
+button {
+  --green: #1bfd9c;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+    0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+button:hover:before {
+  transform: translateX(15em);
+}
+
+/* From Uiverse.io by ElsayedShamsEldeen */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
+  color: white;
+}
+
+.container .label {
+  font-size: 15px;
+  padding-left: 10px;
+  position: absolute;
+  top: 13px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input {
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0px 7px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:focus {
+  border: 2px solid transparent;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.container .input:valid ~ .label,
+.container .input:focus ~ .label {
+  transition: 0.3s;
+  padding-left: 2px;
+  transform: translate(15px, -27px);
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.container .input:valid,
+.container .input:focus {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+/* تصميم العنصر الرئيسي */
+.crud-table {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* add overflow hidden to create a rounded corner effect */
+}
+
+/* تصميم حقل البحث */
+.w-50.mx-auto.mb-5.form-control {
+  margin-bottom: 20px;
+  background-color: #f7f7f7; /* light gray background */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #666; /* dark gray text */
+}
+
+input[type="search"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* add transition effect */
+}
+
+input[type="search"]:focus {
+  border-color: #8bc34a; /* greenish border color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* تصميم جدول البيانات */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent; /* make table background transparent */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; /* add overflow hidden to create a rounded corner effect */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent; /* make table cells background transparent */
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* تصميم أزرار التحكم */
+.btn-1 {
+  background-color: #ff69b4; /* bright pink button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* add transition effect */
+}
+
+.btn-1:hover {
+  background-color: #ff33cc; /* darker bright pink button color on hover */
+}
+
+.btn-2 {
+  background-color: #03a9f4; /* bright blue button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* add transition effect */
+}
+
+.btn-2:hover {
+  background-color: #0297d6; /* darker bright blue button color on hover */
+}
+
+/* إضافة تأثيرات لشكل التصميم */
+.crud-table::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.crud-table::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+   
